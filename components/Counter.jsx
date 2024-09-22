@@ -10,29 +10,29 @@ export default function Counter() {
   const reset = () => setCount(0);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100 p-4">
-      <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-md w-full">
-        <h1 className="text-3xl font-bold mb-4 sm:text-4xl lg:text-5xl">Counter App</h1>
-        <p className="text-5xl font-semibold mb-6 sm:text-6xl lg:text-7xl">{count}</p>
+    <div className="items-center justify-center bg-gray-100">
+      <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+        <h1 className="text-2xl font-bold mb-4">Counter App</h1>
+        <p className="text-4xl font-semibold mb-6">{count}</p>
 
-        <div className="space-x-2 sm:space-x-4">
-          <button
+        <div className="space-x-4">
+        <button
             onClick={decrement}
-            className="px-4 py-2 sm:px-6 sm:py-3 bg-red-500 text-white rounded hover:bg-red-600 w-full sm:w-auto mt-2 sm:mt-0"
+            className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
           >
             Decrement
           </button>
           
           <button
             onClick={increment}
-            className="px-4 py-2 sm:px-6 sm:py-3 bg-blue-500 text-white rounded hover:bg-blue-600 w-full sm:w-auto"
+            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
           >
             Increment
           </button>
 
           <button
             onClick={reset}
-            className="px-4 py-2 sm:px-6 sm:py-3 bg-gray-500 text-white rounded hover:bg-gray-600 w-full sm:w-auto mt-2 sm:mt-0"
+            className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
           >
             Reset
           </button>
